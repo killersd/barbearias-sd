@@ -1,0 +1,25 @@
+### 1. Listar as barbearias disponíveis
+GET http://localhost:3001/barbearias
+
+###
+
+### 2. Criar um novo agendamento (Mande esse primeiro para testar!)
+POST http://localhost:3001/agendamentos
+Content-Type: application/json
+
+{
+  "clienteId": "user_20",
+  "barbeariaId": "3",
+  "servicoId": "s4",
+  "dataHora": "2026-06-26T16:10:00.000Z"
+}
+
+###
+
+### 3. Ver TODOS os agendamentos cadastrados na memória da API
+GET http://localhost:3001/agendamentos
+
+###
+
+### 4. Ver apenas os agendamentos do cliente 'user_10'
+GET http://localhost:3001/agendamentos/cliente/user_20
